@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Resepsi Waheeda & Faaezul</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Optional Font (Handwritten style) -->
+    <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gentium+Plus:ital@0;1&family=Open+Sans&family=Playwrite+DE+VA&family=Roboto&family=Sacramento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+    
+<section id="hero" 
+  class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-black">
+  <main>
+    <div class="logo-container mt-4 align-items-center">
+    <img src="img/gallery/300ppi/ghj.png" alt="Monogram Waheeda & Faaezul" class="monogram-img">
+  </div>
+      <h4> Majlis resepsi perkahwinan</h4>
+      <h1> Waheeda & Faaezul</h1>
+      <p>13 September 2025 | 12:00 PM</p>
+     
+      <audio id="weddingMusic" loop style="display: none;">
+            <source src="img/1.mp3" type="audio/mpeg">
+      </audio>
+        <a href="#home" class="btn btn-mlg" id="btn-buka" onclick="enableScroll(); document.getElementById('weddingMusic').play()">Buka</a>
+
+        <main class="countdown-box text-center my-2">
+          <div id="hero-countdown"></div>
+        </main>
+  </main>
+
+</section>
+
+<nav class="navbar navbar-expend bg-transparent sticky-top mynavbar">
+  <div class="container">
+    <a class="navbar-brand" href="#">Waheeda</a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end offcanvas-small" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Waheeda</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="navbar-nav">
+      <a class="nav-link" href="#home">Home</a>
+      <a class="nav-link" href="#info">Info</a>
+      <a class="nav-link" href="#gallery">Gallery</a>
+      <a class="nav-link" href="#guestbook">Wishes</a>
+    </div>
+  </div>
+</div>
+
+    </div>
+  </div>
+</nav>
+
+<section id="home" class="home">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6 text-center mx-auto">
+        <h2>Jemputan</h2>      
+        <p class="rtl" lang="ar" style="font-size: 2rem; font-family: baseline 'Amiri', serif;">السَّلامُ عَلَيْكُمْ وَرَحْمَةُ اللهِ وَبَرَكَاتُهُ</p>
+        <p>Merisik sudah bertunang pun sudah, Nikah dilafaz sunnah diwarisi, Termeterai sudah janji bermadah, Majlis pernikahan kini dirai</p>
+        <p>Ahmad Sharafae Bin Jafri<br>&<br>Raja Jamelah Binti Raja Daud<br>Sekeluarga</p>
+        <p>dengan ini penuh rasa kesyukuran<br>menjemput<br><strong>Tuan/Puan, Encik/Cik</strong><br>ke majlis resepsi</p>
+        <p class="mt-4 font-semibold text-yellow-800" style="font-family: 'Playwrite DE VA', serif;">Nur Waheeda Binti Ahmad Sharafae<br>&<br>Mohammad Faaezul Ikhwan Bin Ismail lias</p>
+        <p>pada tanggal<br><span class="font-semibold text-yellow-700 text-lg">13 September 2025</span></p>
+        <p>Bunga mawar kami taburi, Air mawar direnjis wangi, Berkembang kasih menabur budi, Undangan kami setulus hati, Harap sudi datang merai, Terima kasih dari kami dan raja sehari.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="info" class="info">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6 col-10 text-center mx-auto text-black">
+        <h2>Info Majlis</h2>
+        <p class="Tempat">Tempat: Bagan Serai Wedding Hall,<br> 34300 Bagan Serai, Perak </p>
+        <a href="https://maps.app.goo.gl/9y7QzNJNvKbNymuUA" class="btn btn-light btn-mlg my-3" target="_blank">G-MAP</a>
+        <a href="https://ul.waze.com/ul?ll=5.01558100%2C100.52604000&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location" class="btn btn-light btn-mlg my-3" target="_blank">WAZE</a>
+        <p>Jemputan adalah dialu-alukan untuk hadir bersama keluarga dan rakan-rakan.</p>
+      </div>
+    </div>
+
+    <div class="row justify-content-center mt-9">
+      <div class="col">
+        <div class="card text-center text-black">
+          <div class="card-header">RESEPSI</div>
+          <div class="card-body">
+          <div class="row justify-content-center">
+            <div class="col-md-6">
+            <div class="row justify-content-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16" shadow="0 0 21 21">
+                <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"/>
+                <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0"/>
+              </svg>
+              <span>Masa: 12.00 - 4.00 PM</span>
+            </div>
+            <div class="row justify-content-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-minus" viewBox="0 0 16 16" shadow="0 0 21 21">
+                <path d="M5.5 9.5A.5.5 0 0 1 6 9h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5"/>
+                <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"/>
+              </svg>
+              <span>Tarikh: 13 September 2025</span>
+            </div>
+            </div>
+          </div>
+          <div class="card-footer mt-3">"Dengan penuh rasa syukur, kami menjemput anda untuk meraikan hari bahagia kami. Kehadiran anda adalah hadiah terindah buat kami. Berkat doa restu anda, semoga mahligai cinta kami kekal abadi. Selamat datang dan selamat menikmati hidangan."</div>
+      </div>
+    </div>
+  </div>
+    <div class="logo-container mt-4 align-items-center">
+    <img src="img/gallery/300ppi/ghj.png" alt="Monogram Waheeda & Faaezul" class="monogram-img">
+  </div>
+</section>
+
+
+<section id="gallery" class="gallery">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-10 col-20 text-center">
+        <h2>Memori Pernikahan</h2>
+      </div>
+    </div>
+
+    <div class="row row-cols-lg-4 row-cols-sm-2 row-cols-1 justify-content-center">
+      <div class="col mt-3">
+        <a href="img/gallery/12.png" data-toggle="lightbox" data-gallery="mygallery">
+        <img src="img/gallery/12.png" class="img-fluid w-100 rounded" alt="Waheeda">
+        </a>
+      </div>
+      <div class="col mt-3">
+        <a href="img/gallery/17.png" data-toggle="lightbox" data-gallery="mygallery">
+        <img src="img/gallery/17.png" class="img-fluid w-100 rounded" alt="Waheeda">
+        </a>
+      </div>
+      <div class="col mt-3">
+        <a href="img/gallery/13.png" data-toggle="lightbox" data-gallery="mygallery">
+        <img src="img/gallery/13.png" class="img-fluid w-100 rounded" alt="Waheeda">
+        </a>
+      </div>
+      <div class="col mt-3">
+        <a href="img/gallery/19.png" data-toggle="lightbox" data-gallery="mygallery">
+        <img src="img/gallery/19.png" class="img-fluid w-100 rounded" alt="Waheeda">
+        </a>
+      </div>
+      <div class="col mt-3">
+        <a href="img/gallery/18.png" data-toggle="lightbox" data-gallery="mygallery">
+        <img src="img/gallery/18.png" class="img-fluid w-100 rounded" alt="Waheeda">
+        </a>
+      </div>
+      <div class="col mt-3">
+        <a href="img/gallery/15.png" data-toggle="lightbox" data-gallery="mygallery">
+        <img src="img/gallery/15.png" class="img-fluid w-100 rounded" alt="Waheeda">
+        </a>
+      </div>
+      <div class="col mt-3">
+        <a href="img/gallery/14.png" data-toggle="lightbox" data-gallery="mygallery">
+        <img src="img/gallery/14.png" class="img-fluid w-100 rounded" alt="Waheeda">
+        </a>
+      </div>
+      <div class="col mt-3">
+        <a href="img/gallery/16.png" data-toggle="lightbox" data-gallery="mygallery">
+        <img src="img/gallery/16.png" class="img-fluid w-100 rounded" alt="Waheeda">
+        </a>
+      </div>
+      <div class="col mt-3">
+        <a href="img/gallery/6.png" data-toggle="lightbox" data-gallery="mygallery">
+        <img src="img/gallery/thumbnail/6.png" class="img-fluid w-100 rounded" alt="Waheeda">
+        </a>
+      </div>
+      <div class="col mt-3">
+        <a href="img/gallery/3.png" data-toggle="lightbox" data-gallery="mygallery">
+        <img src="img/gallery/thumbnail/3.png" class="img-fluid w-100 rounded" alt="Waheeda">
+        </a>
+      </div>
+      <div class="col mt-3">
+        <a href="img/gallery/4.png" data-toggle="lightbox" data-gallery="mygallery">
+        <img src="img/gallery/thumbnail/4.png" class="img-fluid w-100 rounded" alt="Waheeda">
+        </a>
+      </div>
+      <div class="col mt-3">
+        <a href="img/gallery/5.png" data-toggle="lightbox" data-gallery="mygallery">
+        <img src="img/gallery/thumbnail/5.png" class="img-fluid w-100 rounded" alt="Waheeda">
+        </a>
+      </div>
+      </section>
+ <section id="guestbook" class="guestbook">
+    <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-10 col-20 text-center">
+        <h2>Wishes</h2>
+  
+  <div class="swiper mySwiper" style="max-width: 500px; margin: 0 auto;">
+    <div class="swiper-wrapper">
+
+      <!-- Slide 1 -->
+      <div class="swiper-slide">
+        <p class="guest-message">
+          "Tahniah Waheeda & Faaezul! Semoga cinta kalian sentiasa mekar macam bunga di taman. Moga bahagia till jannah!" — Nurul Ain
+        </p>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="swiper-slide">
+        <p class="guest-message">
+          "Selamat pengantin baru! Semoga hari-hari yang mendatang dipenuhi dengan gelak tawa, kasih sayang dan rezeki yang melimpah." — Paan
+        </p>
+      </div>
+      <div class="swiper-slide">
+        <p class="guest-message">
+          "Barakallah! Moga rumahtangga ni jadi ladang pahala untuk korang berdua. InshaAllah kekal sampai syurga." — Amirul Hakim
+        </p>
+      </div>
+      <div class="swiper-slide">
+        <p class="guest-message">
+          "Akhirnya bertemu jodoh! Moga saling melengkapi dan memahami dalam suka dan duka. All the best guys!" — Siti Nadiah
+        </p>
+      </div>
+      <div class="swiper-slide">
+        <p class="guest-message">
+          "Sweet sangat majlis korang! Semoga kekal bahagia, diberi anak soleh solehah, dan sentiasa dalam rahmat Allah." — Faizah 
+        </p>
+      </div>
+      <div class="swiper-slide">
+        <p class="guest-message">
+          "Tahniah korang! Semoga jadi pasangan yang romantik sampai tua dan rumah tangga korang sentiasa dilindungi Allah." — Izzat 
+        </p>
+      </div>
+
+      <!-- Add more slides as needed -->
+
+          </div>
+    
+            <!-- Pagination Dots -->
+          <div class="swiper-pagination mt-4"></div>
+         </div>
+      </div>
+    </div>
+</div>
+</section>
+
+
+    </div>
+  </div>
+
+
+  <footer>
+    <div class="container">
+      <div class="row justify-content-center ">
+        <div class="col text-white text-center">
+          <small class="text">© 2025 Nur Waheeda & Faaezul Ikhwan | Dibangunkan dengan ❤️</small>
+      </div>
+    </div>
+  </footer>
+
+
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+</script>
+
+
+<script>
+  // Set the date we're counting down to (20 September 2025, 12:00 PM)
+  const countdownTarget = new Date("September 13, 2025 12:00:00").getTime();
+  const heroCountdown = document.getElementById("hero-countdown");
+
+  const countdownInterval = setInterval(() => {
+    const now = new Date().getTime();
+    const distance = countdownTarget - now;
+
+    if (distance < 0) {
+      clearInterval(countdownInterval);
+      heroCountdown.innerHTML = "Majlis telah bermula!";
+      return;
+    }
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    heroCountdown.innerHTML =
+      `${days} hari ${hours} jam ${minutes} minit ${seconds} saat`;
+  }, 1000);
+</script>
+
+      
+  <script>
+    const rootElement = document.querySelector(":root");
+    function disableScroll() {
+      scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+
+      window.onscroll = function() {
+        window.scrollTo(scrollTop, scrollLeft);
+      }
+
+      rootElement.style.scrollBehavior = 'auto';
+    }
+
+    function enableScroll() {
+      window.onscroll = function() {}
+      rootElement.style.scrollBehavior = 'smooth';
+      localStorage.setItem('opened', 'true');
+    }
+
+    if(!localStorage.getItem('opened')) {
+      disableScroll();
+    }
+
+  </script>
+
+    
+    <script src="https://www.youtube.com/iframe_api"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" 
+    crossorigin="anonymous">
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.5/dist/index.bundle.min.js"></script>
+  </body>
+</html>
