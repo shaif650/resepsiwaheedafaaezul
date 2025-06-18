@@ -7,12 +7,12 @@
 body {
   font-size:1.2rem;
   font-family: 'Open Sans', sans-serif;
-  min-height: 2000px;
+  min-height: 3000px;
 }
 
 .hero {
   position: relative;
-  min-height: 100vh;
+  min-height: 90vh;
 
 
 }
@@ -69,7 +69,7 @@ body {
 
 
 .mynavbar {
-  background-color: rgba(255, 255, 255, 0.4) !important;
+  background-color: rgba(255, 255, 255, 0.534) !important;
   backdrop-filter: blur(80%);
 }
 
@@ -90,8 +90,8 @@ body {
 
 .offcanvas-small {
   width: 225px !important;
-    background-color: rgb(255, 255, 255) !important;
-    backdrop-filter: blur(80%);
+  background-color: rgb(255, 255, 255) !important;
+  backdrop-filter: blur(80%);
 }
 
 
