@@ -71,6 +71,7 @@ body {
 .mynavbar {
   background-color: rgba(255, 255, 255, 0.534) !important;
   backdrop-filter: blur(80%);
+  box-shadow: var(--shadow);
 }
 
 .mynavbar .navbar-brand, 
