@@ -484,9 +484,9 @@ a[data-toggle="lightbox"] {
 
 
 /*phone*/
-@media (max-width: 600px) {
+@media (max-width: 700px) {
  html{
-    font-size: 85%;
+    font-size: 80%;
   }
 }
   html {
