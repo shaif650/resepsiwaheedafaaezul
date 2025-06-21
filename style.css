@@ -1,13 +1,14 @@
 :root {
   --orange: #9a5050; 
   --bg: #daad8f;
+  --modalbg: #e7d1d1;
   --shadow: 0 2px 2px rgba(0,0,0,0.5);
 
 }
 body {
   font-size:1.2rem;
   font-family: 'Open Sans', sans-serif;
-  min-height: 4000px;
+  min-height: 100vh;
 }
 
 .hero {
@@ -69,7 +70,7 @@ body {
 
 
 .mynavbar {
-  background-color: rgba(255, 255, 255, 0.4) !important;
+  background-color: rgba(255, 255, 255, 0.637) !important;
   backdrop-filter: blur(80%);
 }
 
@@ -90,9 +91,10 @@ body {
 
 .offcanvas-small {
   width: 225px !important;
-    background-color: rgb(255, 255, 255) !important;
+    background-color: rgba(255, 255, 255, 0.404) !important;
     backdrop-filter: blur(80%);
 }
+
 
 
 .home {
@@ -202,6 +204,8 @@ body {
   text-align: center;
   text-shadow: var(--shadow);
   font-weight: bold;
+  padding-top: 3rem;
+  ;
 }
 
 .gallery {
@@ -209,18 +213,149 @@ body {
   background-size: cover;
   background-position: center;
   min-height: 100vh;
-  padding-bottom: 1rem;
-  filter: blur(60%);
-  padding-bottom: 2rem;
-  padding-top: 7rem;
+ 
 }
+
+/* ===== Gallery Section Title ===== */
+
+
+/* ===== Carousel Container Styling ===== */
+/* ---------- Section heading ---------- */
+
+
+/* ---------- Carousel frame ---------- */
+#gallery .carousel{
+  border-radius:1rem;
+  overflow:hidden;
+  box-shadow:0 10px 24px rgba(0,0,0,.08);
+}
+
+/* ---------- Images ---------- */
+#gallery .carousel-item img{
+  object-fit:cover;
+  height:280px;            /* mobile default */
+  transition:transform .5s ease;
+}
+#gallery .carousel-item img:hover{
+  transform:scale(1.03);
+}
+
+/* desktop/tall tablets */
+
+
+/* ---------- Controls (arrows) ---------- */
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+  background-color:var(--orange); 
+  border-radius:50%;
+  width:2.5rem;
+  height:2.5rem;
+  background-size:1.2rem 1.2rem;
+}
+
+/* ---------- Indicators (dots) ---------- */
+.carousel-indicators [data-bs-target]{
+  width:.55rem;
+  height:.55rem;
+  margin:0 .2rem;
+  background-color:#e0e0e000;
+  opacity:1;
+}
+.carousel-indicators .active{
+  background-color: var(--orange);
+}
+
+/* === Gallery Layout === */
+#gallery .row-cols-lg-4 {
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+#gallery .col {
+  display: flex;
+  justify-content: center;
+}
+
+/* === Scrollable (optional, only apply if needed) === */
+.scrollable-gallery {
+  max-height: 100vh;
+  overflow-y: auto;
+  padding-right: 5px; /* Adjust for scrollbar */
+}
+
+/* === Image Styling === */
+#gallery img {
+  border-radius: 1rem;
+  transition: transform 0.3s ease-in-out;
+  object-fit: cover;
+  pointer-events: none; /* Prevent drag */
+  user-select: none;    /* Prevent copy */
+  width: 100%;
+}
+
+/* Hover effect */
+#gallery img:hover {
+  transform: scale(1.02);
+}
+
+/* === Image Protection Wrapper === */
+.image-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+.image-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  z-index: 2;
+}
+
+/* === Lightbox compatibility === */
+a[data-toggle="lightbox"] {
+  display: block;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+
+/* === Responsive Adjustments === */
+@media (max-width: 600px) {
+  #gallery img {
+    height: auto;
+  }
+
+  .scrollable-gallery {
+    padding-bottom: 1rem;
+  }
+}
+
+
+
+
+/* ---------- Layout: stacked on <768px, side-by-side otherwise ---------- */
+@media (max-width:600px){
+  #gallery .col-md-6{
+    flex:0 0 100%;
+    max-width:100%;
+  }
+}
+
+
+
+
 
 
 .guest-message {
     font-family: 'La Belle Aurore', cursive;
     font-size: 1.25rem;
     color: #333;
-    padding: 0 20px;
+  
     padding-top: 1rem;
     padding-bottom: 2rem;
     text-shadow: var(--shadow);
@@ -235,35 +370,122 @@ body {
   text-shadow: var(--shadow);
   font-weight: bold;
   padding-top: 1rem;
+  
   }
 
 
 
+.guestbook {
+  position: relative;
+  min-height: 30vh;
+ background-image: url(img/234.jpg);
+    background-size: cover;
+    background-position: right;
 
-footer {
-    font-family: 'Open Sans', sans-serif;
-    padding: 0.5rem;
-    background-color: var(--orange);
-    text-align: center;
-    box-shadow: var(--shadow);
 }
 
-/*media query*/
-@media (max-width: 1280px) {
- html{
-    font-size: 100%;
-  }
+#bottomNavbar {
+  background-color: #ffffff7e;
+  border-top: none !important;
+  box-shadow: 0 -3px 8px rgba(0, 0, 0, 0.08);
+  z-index: 999;
 }
-/*tablet*/
-@media (max-width: 768px){
+
+#bottomNavbar a {
+  color: #2b2b2bd5 !important;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.1s ease;
+}
+
+#bottomNavbar a:hover {
+  color: var(--orange); /* highlight with soft pink-purple tone */
+}
+
+#bottomNavbar i {
+  font-size: 1.3rem;
+  margin-bottom: 0.25rem;
+  display: block;
+}
+
+.nav-icon {
+  width: 40px;
+  height: 40px;
+  object-fit: cover; /* Ensures the image maintains aspect ratio */
+}
+
+
+/* Common modal enhancements */
+.modal-content {
+  border-radius: 1rem;
+  border: none;
+  box-shadow: 0 0 25px rgba(46, 46, 46, 0.178);
+}
+
+.modal-header {
+  background-color: var(--orange);
+  border-bottom: 1px solid #f2f2f2;
+  color: #8b3a62;
+  font-weight: 600;
+  text-align: left !important;
+  font-family: 'Sacramento', serif;
+}
+
+.modal-title {
+  font-size: 2rem;
+  color: #e7d1d1;
+  font-weight: 2rem;
+}
+
+.modal-body {
+  padding: 1.5rem;
+  font-size: 1rem;
+  color: #444;
+}
+
+
+
+
+.btn {
+  
+  text-shadow: var(--shadow);
+  font-weight: 600;
+  color: var(--orange);
+  background-color: rgb(253, 253, 253);
+  box-shadow: var(--shadow);
+}
+
+.btn:hover {
+  background-color: var(--orange);
+  color: rgb(253, 253, 253);
+}
+
+
+
+.modal .btn-close {
+  filter: brightness(0.4);
+  border-width: 1%;
+}
+
+/* Responsive adjustments */
+
+
+.modal-header, .modal-body {
+  padding: 1rem;
+}
+
+.modal-fade h5{
+  text-align: start 
+}
+
+
+
+
+
+/*phone*/
+@media (max-width: 600px) {
  html{
     font-size: 85%;
-  }
-}
-/*phone*/
-@media (max-width: 480px) {
- html{
-    font-size: 90%;
   }
 }
   html {

@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Resepsi Waheeda & Faaezul</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-        <!-- Swiper CSS -->
+   
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <!-- Swiper JS -->
+  
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <!-- Optional Font (Handwritten style) -->
+   
     <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,7 +36,7 @@
       <audio id="weddingMusic" loop style="display: none;">
             <source src="img/1.mp3" type="audio/mpeg">
       </audio>
-        <a href="#home" class="btn btn-mlg" id="btn-buka" onclick="enableScroll(); document.getElementById('weddingMusic').play()">Buka</a>
+          <a href="#home" class="btn btn-mlg" id="btn-buka" onclick="enableScroll(); document.getElementById('weddingMusic').play(); showNavbar()">Buka</a>
 
         <main class="countdown-box text-center my-2">
           <div id="hero-countdown"></div>
@@ -44,6 +44,7 @@
   </main>
 
 </section>
+
 
 <nav class="navbar navbar-expend bg-transparent sticky-top mynavbar">
   <div class="container">
@@ -56,7 +57,7 @@
     <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Waheeda</h5>
     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
-  <div class="offcanvas-body">
+  <div class="offcanvas-body offcanvasbody">
     <div class="navbar-nav">
       <a class="nav-link" href="#home">Home</a>
       <a class="nav-link" href="#info">Info</a>
@@ -132,93 +133,113 @@
 </section>
 
 
-<section id="gallery" class="gallery">
+<section id="gallery" class="gallery py-5">
   <div class="container">
     <div class="row justify-content-center">
-      <div class="col-md-10 col-20 text-center">
-        <h2>Memori Pernikahan</h2>
+      <h2 class="text-center mb-4">Memori Pernikahan</h2>
+    </div>
+
+    <div class="row g-4 justify-content-center">
+
+      <div class="col-12 col-md-6">
+        <div id="carouselAlbum1" class="carousel slide h-100" data-bs-ride="carousel" data-bs-interval="5000">
+          <div class="carousel-inner h-100">
+            <div class="carousel-item active">
+              <img src="img/gallery/6.png" class="d-block w-100" alt="Album 1 - 0">
+            </div>
+            <div class="carousel-item">
+              <img src="img/gallery/3.png" class="d-block w-100" alt="Album 1 - 1">
+            </div>
+            <div class="carousel-item">
+              <img src="img/gallery/4.png" class="d-block w-100" alt="Album 1 - 2">
+            </div>
+            <div class="carousel-item">
+              <img src="img/gallery/5.png" class="d-block w-100" alt="Album 1 - 3">
+            </div>
+          </div>
+
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselAlbum1" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#carouselAlbum1" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carouselAlbum1" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#carouselAlbum1" data-bs-slide-to="3"></button>
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselAlbum1" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Prev</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselAlbum1" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
       </div>
     </div>
 
-    <div class="row row-cols-lg-4 row-cols-sm-2 row-cols-1 justify-content-center">
-      <div class="col mt-3">
+    <div class="row row-cols-lg-4 row-cols-sm-2 row-cols-1 justify-content-center g-4 mt-3">
+      <div class="col">
         <a href="img/gallery/12.png" data-toggle="lightbox" data-gallery="mygallery">
-        <img src="img/gallery/12.png" class="img-fluid w-100 rounded" alt="Waheeda">
+          <img src="img/gallery/12.png" class="img-fluid w-100 rounded" alt="Waheeda">
         </a>
       </div>
-      <div class="col mt-3">
+      <div class="col">
         <a href="img/gallery/17.png" data-toggle="lightbox" data-gallery="mygallery">
-        <img src="img/gallery/17.png" class="img-fluid w-100 rounded" alt="Waheeda">
+          <img src="img/gallery/17.png" class="img-fluid w-100 rounded" alt="Waheeda">
         </a>
       </div>
-      <div class="col mt-3">
+      <div class="col">
         <a href="img/gallery/13.png" data-toggle="lightbox" data-gallery="mygallery">
-        <img src="img/gallery/13.png" class="img-fluid w-100 rounded" alt="Waheeda">
+          <img src="img/gallery/13.png" class="img-fluid w-100 rounded" alt="Waheeda">
         </a>
       </div>
-      <div class="col mt-3">
+      <div class="col">
         <a href="img/gallery/19.png" data-toggle="lightbox" data-gallery="mygallery">
-        <img src="img/gallery/19.png" class="img-fluid w-100 rounded" alt="Waheeda">
+          <img src="img/gallery/19.png" class="img-fluid w-100 rounded" alt="Waheeda">
         </a>
       </div>
-      <div class="col mt-3">
+      <div class="col">
         <a href="img/gallery/18.png" data-toggle="lightbox" data-gallery="mygallery">
-        <img src="img/gallery/18.png" class="img-fluid w-100 rounded" alt="Waheeda">
+          <img src="img/gallery/18.png" class="img-fluid w-100 rounded" alt="Waheeda">
         </a>
       </div>
-      <div class="col mt-3">
+      <div class="col">
         <a href="img/gallery/15.png" data-toggle="lightbox" data-gallery="mygallery">
-        <img src="img/gallery/15.png" class="img-fluid w-100 rounded" alt="Waheeda">
+          <img src="img/gallery/15.png" class="img-fluid w-100 rounded" alt="Waheeda">
         </a>
       </div>
-      <div class="col mt-3">
+      <div class="col">
         <a href="img/gallery/14.png" data-toggle="lightbox" data-gallery="mygallery">
-        <img src="img/gallery/14.png" class="img-fluid w-100 rounded" alt="Waheeda">
+          <img src="img/gallery/14.png" class="img-fluid w-100 rounded" alt="Waheeda">
         </a>
       </div>
-      <div class="col mt-3">
+      <div class="col">
         <a href="img/gallery/16.png" data-toggle="lightbox" data-gallery="mygallery">
-        <img src="img/gallery/16.png" class="img-fluid w-100 rounded" alt="Waheeda">
+          <img src="img/gallery/16.png" class="img-fluid w-100 rounded" alt="Waheeda">
         </a>
       </div>
-      <div class="col mt-3">
-        <a href="img/gallery/6.png" data-toggle="lightbox" data-gallery="mygallery">
-        <img src="img/gallery/thumbnail/6.png" class="img-fluid w-100 rounded" alt="Waheeda">
-        </a>
-      </div>
-      <div class="col mt-3">
-        <a href="img/gallery/3.png" data-toggle="lightbox" data-gallery="mygallery">
-        <img src="img/gallery/thumbnail/3.png" class="img-fluid w-100 rounded" alt="Waheeda">
-        </a>
-      </div>
-      <div class="col mt-3">
-        <a href="img/gallery/4.png" data-toggle="lightbox" data-gallery="mygallery">
-        <img src="img/gallery/thumbnail/4.png" class="img-fluid w-100 rounded" alt="Waheeda">
-        </a>
-      </div>
-      <div class="col mt-3">
-        <a href="img/gallery/5.png" data-toggle="lightbox" data-gallery="mygallery">
-        <img src="img/gallery/thumbnail/5.png" class="img-fluid w-100 rounded" alt="Waheeda">
-        </a>
-      </div>
-      </section>
+    </div>
+  </div>
+</section>
+
+
+
+
  <section id="guestbook" class="guestbook">
     <div class="container">
     <div class="row justify-content-center">
       <div class="col-md-10 col-20 text-center">
         <h2>Wishes</h2>
   
-  <div class="swiper mySwiper" style="max-width: 500px; margin: 0 auto;">
+  <div id="swiper" class="swiper mySwiper" style="max-width: 1000px; margin: -2 auto;">
     <div class="swiper-wrapper">
 
-      <!-- Slide 1 -->
       <div class="swiper-slide">
         <p class="guest-message">
           "Tahniah Waheeda & Faaezul! Semoga cinta kalian sentiasa mekar macam bunga di taman. Moga bahagia till jannah!" — Nurul Ain
         </p>
       </div>
 
-      <!-- Slide 2 -->
       <div class="swiper-slide">
         <p class="guest-message">
           "Selamat pengantin baru! Semoga hari-hari yang mendatang dipenuhi dengan gelak tawa, kasih sayang dan rezeki yang melimpah." — Paan
@@ -265,31 +286,126 @@
         </p>
       </div>
 
-      <!-- Add more slides as needed -->
 
           </div>
     
-            <!-- Pagination Dots -->
-          <div class="swiper-pagination mt-4"></div>
+          <div class="swiper-pagination mt-4 mySwiper"></div>
          </div>
       </div>
     </div>
 </div>
+
+<nav id="bottomNavbar" class="navbar fixed-bottom bg-secondary-subtle border-top py-2 d-none">
+  <div class="container d-flex justify-content-around text-center small text-dark">
+
+    <a class="text-decoration-none text-dark" data-bs-toggle="modal" data-bs-target="#calendarModal">
+      <i class="bi bi-calendar-event fs-5 d-block"></i>Kalendar
+    </a>
+
+    <a class="text-decoration-none text-dark" data-bs-toggle="modal" data-bs-target="#locationModal">
+      <i class="bi bi-geo-alt fs-5 d-block"></i>Lokasi
+    </a>
+
+    <a class="text-decoration-none text-dark" data-bs-toggle="modal" data-bs-target="#contactModal">
+      <i class="bi bi-person-lines-fill fs-5 d-block"></i>Hubungi
+    </a>
+
+  </div>
+</nav>
+
+<div class="modal fade" id="locationModal" tabindex="-1" aria-labelledby="locationModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content rounded-4">
+      <div class="modal-header border-0 bg-peach text-center w-100">
+        <h5 class="modal-title mx-auto" id="locationModalLabel">Navigasi Lokasi 📍</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row g-4 justify-content-center">
+
+          <div class="col-6 text-center">
+            <a href="https://maps.app.goo.gl/9y7QzNJNvKbNymuUA" target="_blank" class="nav-link">
+              <img src="img/gallery/568.png" class="nav-icon mb-2" alt="Google Maps">
+              <div><strong>Google&nbsp;Maps</strong></div>
+            </a>
+          </div>
+
+          <div class="col-6 text-center">
+            <a href="https://ul.waze.com/ul?ll=5.01558100%2C100.52604000&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location" target="_blank" class="nav-link">
+              <img src="img/gallery/589.png" class="nav-icon mb-2" alt="Waze">
+              <div><strong>Waze</strong></div>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="calendarModal" tabindex="-1" aria-labelledby="calendarModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content rounded-4">
+      <div class="modal-header border-0 bg-peach text-center w-100">
+        <h5 class="modal-title mx-auto" id="calendarModalLabel">Simpan Tarikh 📅</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body text-center">
+        <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Majlis+Resepsi+Waheeda+%26+Faaezul&dates=20250913T040000Z/20250913T080000Z&details=Majlis+resepsi+Waheeda+%26+Faaezul&location=Bagan+Serai+Wedding+Hall%2C+Lot+11147%2C+2%2C+Jalan+Siakap%2C+Kampung+Matang+Gerdu%2C+34300+Bagan+Serai%2C+Perak%2C+Malaysia
+" 
+           target="_blank" 
+           class="btn">
+           Tambah ke Google Calendar anda
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content rounded-4">
+      <div class="modal-header border-0 bg-peach text-center w-100">
+        <h5 class="modal-title mx-auto" id="contactModalLabel">Hubungi Kami ☎️</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <ul class="list-unstyled mb-0 text-center small">
+          <li class="mb-2">📲 Shaif&nbsp;:&nbsp;<a href="tel:+60199842926">+60&nbsp;19-984&nbsp;2926</a></li>
+          <li class="mb-2">📲 Amirul&nbsp;:&nbsp;<a href="tel:+60164064161">+60&nbsp;16-406&nbsp;4161</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
 </section>
 
 
-    </div>
-  </div>
+ 
 
 
-  <footer>
-    <div class="container">
-      <div class="row justify-content-center ">
-        <div class="col text-white text-center">
-          <small class="text">© 2025 Nur Waheeda & Faaezul Ikhwan | Dibangunkan dengan ❤️</small>
-      </div>
-    </div>
-  </footer>
+
+<script>
+// Disable right-click
+document.addEventListener('contextmenu', event => event.preventDefault());
+
+// Disable F12, Ctrl+Shift+I, Ctrl+U
+document.onkeydown = function(e) {
+  if (
+    e.key === "F12" || 
+    (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "J" || e.key === "C")) || 
+    (e.ctrlKey && e.key === "U")
+  ) {
+    return false;
+  }
+};
+</script>
 
 
 <script>
@@ -306,9 +422,25 @@
   });
 </script>
 
+<script>
+  var swiperAlbum2 = new Swiper(".mySwiperAlbum2", {
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
 
 <script>
-  // Set the date we're counting down to (20 September 2025, 12:00 PM)
   const countdownTarget = new Date("September 13, 2025 12:00:00").getTime();
   const heroCountdown = document.getElementById("hero-countdown");
 
@@ -358,8 +490,37 @@
 
   </script>
 
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const bukaButton = document.getElementById("btn-buka");
+    const bottomNavbar = document.getElementById('bottomNavbar');
+
+    if (localStorage.getItem('navbarVisible') === 'true') {
+      bottomNavbar.classList.remove('d-none');
+    }
+
+    if (bukaButton) {
+      bukaButton.addEventListener('click', function () {
+        bottomNavbar.classList.remove('d-none');
+        localStorage.setItem('navbarVisible', 'true');
+      });
+    }
+  });
+</script>
+
+
     
-    <script src="https://www.youtube.com/iframe_api"></script>
+
+
+
+
+  
+
+
+
+
+    
+    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" 
@@ -367,5 +528,6 @@
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.5/dist/index.bundle.min.js"></script>
+    
   </body>
 </html>
