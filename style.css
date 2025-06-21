@@ -377,7 +377,7 @@ a[data-toggle="lightbox"] {
 
 .guestbook {
   position: relative;
-  min-height: 45vh;
+  min-height: 35vh;
  background-image: url(img/234.jpg);
     background-size: cover;
     background-position: right;
