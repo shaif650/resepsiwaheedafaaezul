@@ -381,6 +381,7 @@ a[data-toggle="lightbox"] {
  background-image: url(img/234.jpg);
     background-size: cover;
     background-position: right;
+    
 
 }
 
@@ -485,7 +486,7 @@ a[data-toggle="lightbox"] {
 /*phone*/
 @media (max-width: 600px) {
  html{
-    font-size: 80%;
+    font-size: 90%;
   }
 }
   html {
