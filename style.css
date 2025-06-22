@@ -377,7 +377,7 @@ a[data-toggle="lightbox"] {
 
 .guestbook {
   position: relative;
-  min-height: 35vh;
+  min-height: 40vh;
  background-image: url(img/234.jpg);
     background-size: cover;
     background-position: right;
@@ -490,33 +490,7 @@ a[data-toggle="lightbox"] {
   }
 }
 
-/* Base mobile settings - targets most phones */
-@media (max-width: 768px) {
-  html {
-    font-size: 90%;
-  }
-}
 
-/* iPhone SE and small Android phones (≤ 375px width) */
-@media (max-width: 375px) {
-  html {
-    font-size: 85%;
-  }
-}
-
-/* iPhone Plus models and medium Androids (376px - 414px) */
-@media (min-width: 376px) and (max-width: 414px) {
-  html {
-    font-size: 95%;
-  }
-}
-
-/* Large phones / small tablets (landscape or bigger Android devices) */
-@media (min-width: 415px) and (max-width: 768px) {
-  html {
-    font-size: 100%;
-  }
-}
   html {
     scroll-behavior: smooth;
   }
